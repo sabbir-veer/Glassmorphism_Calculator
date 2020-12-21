@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="value">00</div>
+        <span class="clr">clr</span>
+        <span class="division">/</span>
+        <span class="multiply">*</span>
+        <span class="num7" value="7">7</span>
+        <span class="num8">8</span>
+        <span class="num9">9</span>
+        <span class="minus">-</span>
+        <span class="num4">4</span>
+        <span class="num5">5</span>
+        <span class="num6">6</span>
+        <span class="plus">+</span>
+        <span class="num1">1</span>
+        <span class="num2">2</span>
+        <span class="num3">3</span>
+        <span class="num0">0</span>
+        <span class="num00">00</span>
+        <span class="dot">.</span>
+        <span class="equal">=</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".container"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
